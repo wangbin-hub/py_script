@@ -1,0 +1,9 @@
+[test]
+huawei_cdn = "http://cdn2.siwei.com/download.zip"
+aliy_cdn = "http://cdn.siwei.com/download.zip"
+goout = "https://goout.rlfw.cn/sports.zip"
+[es]
+#es服务器地址
+host = "10.0.3.195"
+#es服务器端口
+port = 9200

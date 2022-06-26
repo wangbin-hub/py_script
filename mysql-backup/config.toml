@@ -1,0 +1,17 @@
+#安装
+#yum install https://repo.percona.com/yum/percona-release-latest.noarch.rpm
+#yum localinstall -y percona-xtrabackup-24-2.4.22-1.el7.x86_64.rpm
+#添加备份账号
+#GRANT reload,lock tables,replication client,create tablespace,process,super ON *.* TO 'backup'@'%' identified by 'MyNewPass4';
+[backup]
+servic_env = "海外数据库备份报警"
+address = "10.0.4.105"
+user = "root"
+password = "123456"
+backup_addr = "/data/backup" #备份目录需和全备目录保持一致，不一致会影响使用
+sock_path = "/var/lib/mysql/mysql.sock"
+#webhook地址
+url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=4fa29c30-e426-43b7-b846-6d8ca71d59cf"
+[restore]
+increment_path = "/data/mysql/back/1week"
+all_path = "/data/mysql/back/2022-01-07_18-26-22"

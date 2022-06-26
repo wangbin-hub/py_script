@@ -1,0 +1,7 @@
+[es]
+host = "10.0.3.195"
+port = 9200
+timeout = 3000
+interval = 3
+web_hook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=a5a7a0a1-ea1b-4387-889b-693bd5312f18"
+

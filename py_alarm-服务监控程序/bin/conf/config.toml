@@ -1,0 +1,4 @@
+[apollo]
+app_id = "alarm"
+config_server_url = "http://apollo.siwei.com:8080"
+cluster = "re_alarm"
